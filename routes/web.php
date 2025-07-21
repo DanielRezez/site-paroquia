@@ -23,6 +23,6 @@ Route::view('/', 'pages.home');
 Route::view('/sobre', 'pages.sobre');
 Route::view('/horarios', 'pages.horarios');
 Route::view('/eventos', 'pages.eventos');
-Route::view('/reliquias', 'pages.reliquias');
+Route::view('/padroeiro', 'pages.padroeiro');
 Route::view('/contato', 'pages.contato');
 

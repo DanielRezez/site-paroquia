@@ -1,0 +1,74 @@
+/* colors-mode-1.css */
+:root {
+	--AzulMarianista: rgb(47 93 169);
+	--Bege: rgb(244 239 234);
+	--BrancoPuro: rgb(255 255 255);
+	--CinzaLeve: rgb(224 224 224);
+	--DouradoSuave: rgb(212 175 55);
+	--MarromEscuro: rgb(54 34 28);
+	--RoxoLitúrgico: rgb(102 0 102);
+	--VerdeEsperança: rgb(58 126 63);
+	--VermelhoVinho: rgb(140 29 29);
+
+	--fontFamily-Cinzel: 'Cinzel';
+	--fontFamily-Cormorant-Garamond: 'Cormorant Garamond';
+	--fontFamily-EB-Garamond: 'EB Garamond';
+	--fontFamily-Great-Vibes: 'Great Vibes';
+	--fontFamily-Libre-Baskerville: 'Libre Baskerville';
+	--fontFamily-Lora: 'Lora';
+	--fontFamily-Open-Sans: 'Open Sans';
+	--fontFamily-Playfair-Display: 'Playfair Display';
+	--fontFamily-Raleway: 'Raleway';
+	
+	--fontSize-15: 0.9375rem;
+	--fontSize-16: 1rem;
+	--fontSize-18: 1.125rem;
+	--fontSize-24: 1.5rem;
+	--fontSize-32: 2rem;
+	--fontSize-44: 2.75rem;
+
+	--bold: 700;
+	--medium: 500;
+	--regular: 400;
+	--semibold: 600;
+
+}
+
+/* Tamanhos de fonte */
+.fs-15 { font-size: var(--fontSize-15) !important; }
+.fs-16 { font-size: var(--fontSize-16) !important; }
+.fs-18 { font-size: var(--fontSize-18) !important; }
+.fs-24 { font-size: var(--fontSize-24) !important; }
+.fs-32 { font-size: var(--fontSize-32) !important; }
+.fs-44 { font-size: var(--fontSize-44) !important; }
+
+/* Fontes */
+.ff-cinzel { font-family: var(--fontFamily-Cinzel), serif !important; }
+.ff-raleway { font-family: var(--fontFamily-Raleway), sans-serif !important; }
+.ff-open-sans { font-family: var(--fontFamily-Open-Sans), sans-serif !important; }
+.ff-lora { font-family: var(--fontFamily-Lora), serif !important; }
+.ff-playfair-display { font-family: var(--fontFamily-Playfair-Display), serif !important; }
+.ff-libre-baskerville { font-family: var(--fontFamily-Libre-Baskerville), serif !important; }
+.ff-great-vibes { font-family: var(--fontFamily-Great-Vibes), cursive !important; }
+.ff-eb-garamond { font-family: var(--fontFamily-EB-Garamond), serif !important; }
+.ff-cormorant-garamond { font-family: var(--fontFamily-Cormorant-Garamond), serif !important; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--Bege);
+    color: var(--MarromEscuro);
+
+}
+
+.bg-cinza-leve {
+	background-color: var(--CinzaLeve);
+}
+
+.bg-marrom-escuro {
+	background-color: var(--MarromEscuro);
+}
