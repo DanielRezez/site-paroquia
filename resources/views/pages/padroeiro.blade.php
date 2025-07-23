@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paróquia de Santo António de Pádua</title>
-    <link rel="stylesheet" href="{{ asset('css/header.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/global.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/padroeiro.css') }}">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <!-- Header -->
-    @include('components.header')
+@extends('layouts.app')
 
+@section('title', 'Santo Padroeiro')
+
+@push('styles')
+<link rel="stylesheet" href="{{ asset('css/padroeiro.css') }}">
+@endpush
+
+@section('content')
     <!-- Santo Padroeiro Banner -->
     <section class="santo-banner">
         <div class="container">
@@ -104,64 +96,5 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-info">
-                    <div class="footer-logo">
-                        <div class="logo-circle">
-                            <i class="fas fa-cross"></i>
-                        </div>
-                        <div>
-                            <h4>Paróquia de Santo António de Pádua</h4>
-                            <p>Endereço</p>
-                        </div>
-                    </div>
-
-                    <div class="address">
-                        <p>Av. Tomás Landim, s/n</p>
-                        <p>Conj. Parque dos Coqueiros - Bairro</p>
-                        <p>Nossa Senhora da Apresentação</p>
-                        <p>Natal/RN - CEP: 59.000-000</p>
-                    </div>
-                </div>
-
-                <div class="footer-contact">
-                    <h4>Contato</h4>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> (84) 3643-1234</p>
-                        <p><i class="fas fa-envelope"></i> paroquia@santoantonio.com</p>
-                    </div>
-
-                    <h4>Horários</h4>
-                    <div class="schedule">
-                        <p>Domingo - 7h e 19h</p>
-                        <p>Terça a sexta - 19h</p>
-                        <p>Sábado - 7h</p>
-                    </div>
-
-                    <p class="secretary-hours">Funcionamento da Secretaria paroquial:</p>
-                    <p class="secretary-hours">Segunda a sexta-feira: 7h30 às 11h30 e das 13h30 às 17h30</p>
-                </div>
-
-                <div class="footer-map">
-                    <div class="map-placeholder">
-                        <img src="/api/placeholder/300/200" alt="Mapa da localização" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-                <p>&copy; 2024. Paróquia Matriz de Santo António de Pádua</p>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+    
+@endsection

@@ -7,14 +7,14 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 30px;
+
 }
 
 .main-nav a {
     color: var(--MarromEscuro);
     text-decoration: none;
     font-weight: var(--semibold);
-    font-size: var(--fontSize-18);
+    font-size: var(--fontSize-17);
     transition: color 0.3s;
 }
 
@@ -40,29 +40,60 @@
     color: var(--VermelhoVinho);
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
   .header {
     padding: 1rem 0;
     text-align: center;
   }
 
   .logo-img {
-    height: 60px;
+    height: 70px;
     margin-bottom: 1rem;
+  }
+
+  .menu-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+  }
+
+  .menu-toggle .hamburger {
+      width: 25px;
+      height: 3px;
+      background-color: var(--MarromEscuro, #333);
+      transition: 0.3s;
+  }
+
+  .main-nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+
+  .main-nav.show {
+    display: flex;
   }
 
   .main-nav ul {
     flex-direction: column;
     gap: 12px;
-    font-size: var(--fontSize-15);
     padding: 0;
     margin: 0;
   }
+
+    .main-nav ul li {
+        border-bottom: 1px solid var(--VermelhoVinho);
+  
+    }
 
   .main-nav a {
     display: block;
     width: 100%;
     padding: 0.5rem 0;
+    font-size: var(--fontSize-15);
   }
 
   .social-icons {

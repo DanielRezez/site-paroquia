@@ -5,6 +5,11 @@
                 <a href="{{ url('/') }}" class="logo">
                     <img src="{{ asset('marca.png') }}" alt="Logo da Paróquia" class="logo-img"/>
                 </a>
+                <button class="menu-toggle d-md-none" id="menuToggle" aria-label="Abrir menu">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
             </div>
 
             <nav class="main-nav p-0">
