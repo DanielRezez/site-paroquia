@@ -1,4 +1,2 @@
-console.log('JS carregado');
-
-import './bootstrap';
 import './header';
+import '../css/app.css';

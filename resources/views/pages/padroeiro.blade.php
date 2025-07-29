@@ -3,7 +3,7 @@
 @section('title', 'Santo Padroeiro')
 
 @push('styles')
-<link rel="stylesheet" href="{{ asset('css/padroeiro.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/padroeiro.css') }}">
 @endpush
 
 @section('content')
